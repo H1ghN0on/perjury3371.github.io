@@ -1,0 +1,158 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+body {
+  background:white ;
+}
+
+
+header {
+  padding:20px 20px;
+  background:#8000ff;
+  display:flex;
+  box-shadow:0px 0px 15px 0px rgba(50, 50, 50, 0.75);
+}
+
+header .header__name {
+  font:48px Arial;
+  font-weight: 700;
+  text-transform: uppercase;
+  color:white;
+}
+
+header .myname {
+  font:18px Arial;
+  font-weight: 700;
+  text-transform: uppercase;
+  color:white;
+  position:relative;
+  left:40px;
+}
+
+
+section.portfolio .container{
+  display:flex;
+  margin-top:40px;
+}
+
+section.portfolio .container .box {
+  margin:0 auto;
+  text-align:center;
+}
+section.portfolio .container .box a {
+
+}
+
+section.portfolio .container .box a img {
+  width:80%;
+}
+section.portfolio .container .box a .link__name {
+  font:20px Arial;
+  color:blue;
+  text-decoration: none;
+  padding:5px 15px;
+  transition:0.3s;
+  background:none;
+  color:blue;
+  border-radius: 20px;
+  width:150px;
+  margin:0 auto;
+  margin-top:10px;
+
+}
+
+section.portfolio .container .box a .link__name:hover {
+  font:20px Arial;
+  color:blue;
+  text-decoration: none;
+  padding:5px 15px;
+  transition:0.3s;
+  background:#b366ff;
+  color:white;
+
+}
+
+section.portfolio .container .box .box__name {
+  font:24px Arial;
+  margin-top:10px;
+  text-transform: uppercase;
+  color:#8000ff;
+  text-decoration: underline;
+}
+
+section.portfolio .container .box .box__descr {
+  margin-top:10px;
+  font:16px Arial;
+  color:#8000ff;
+}
