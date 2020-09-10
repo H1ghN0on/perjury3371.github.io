@@ -1,0 +1,992 @@
+@font-face {
+    font-family: Lato-Regular; 
+    src: url(font/Lato-Regular.ttf); 
+
+}
+
+@font-face {
+	font-family: Lato-Light;
+	src: url(font/Lato-Light.ttf);
+}
+    
+@font-face {
+	font-family: Lato-Bold;
+	src: url(font/Lato-Bold.ttf);
+}
+	
+
+
+@font-face {
+	font-family: OpenSans-Light;
+    src: url(font/OpenSans-Light.ttf);
+}
+
+@font-face {
+	font-family: Gotham-Black;
+	src: url(font/14004.otf);
+}
+
+body {
+	overflow-x:hidden;
+}
+
+.container {
+ 	display:flex;
+ 	flex-direction: column; 
+ 	margin-top : -10px;
+ 	margin-left: -10px;
+ 	margin-right:-10px;
+ 	margin-bottom: -10px;
+ }
+
+ .container .banner .service .aboutus .chooseyourpricing .howitworks .happyclients .newsletter .map .end , footer {
+	padding:20px;
+	display:flex;
+	
+ }
+
+
+header {
+ 	height:124px;
+ 	display:flex;
+
+
+
+ }
+
+.logo {
+	display:flex;
+ 	flex-grow:6;
+ 	justify-content: center;
+ 	align-items:center;
+ 	
+}
+.logopic {
+	height:40px;
+}
+header nav {
+
+	flex-grow:3;
+	display:flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap:wrap;
+
+}
+
+
+header .navbtn li {
+	display:inline;
+	align-self:center;
+	margin: 0 2px;
+	text-transform: uppercase;
+	
+
+}
+
+header .navbtn li a {
+	text-decoration: none;
+	color:#868686;
+	font-family: Lato-Regular;
+	font-size:15px;
+	padding:10px;
+	transition: background-color 0.1s linear;
+	cursor:pointer;	
+}
+
+header .navbtn li a:hover {
+	
+	color:white;
+	background: orange;
+	
+}
+ /*
+
+
+
+
+ */
+
+.banner {
+	height :787px;
+	background-image: url(image/banner/bg.png);
+	background-repeat: repeat-x;
+	background-size:80;
+
+}
+
+.paragraph {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-top:90px;
+	margin:auto;
+}
+
+#boost {
+	text-transform: uppercase;
+	font-family: Gotham-Black;
+	color:white;
+	font-size:30pt;
+	margin-bottom: -20px;
+}
+
+#typesetting {
+	font-family: OpenSans-Light;
+	color:white;
+	font-size:15pt;
+
+}
+
+.banner form {
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	margin-top:20px;
+	flex-wrap:wrap;
+
+
+}
+
+.banner form input {
+	margin: 0 5px;
+	width:250px;
+	height:35px;
+	border:3px solid #709dca;
+ 	transition: border-color 0.1s linear;
+ 	
+
+}
+
+label[class*="font-aws"] input:hover {
+	border:3px solid orange;
+}
+
+
+
+::-moz-placeholder {/*Firefox 19+*/
+  font: OpenSans sans-serif;
+  margin-left:20px;
+  color:#6e6e6e;
+
+}
+ i{
+ 	color:#6e6e6e
+ }
+ label[class*="font-aws"]{
+  position: relative;
+}
+label[class*="font-aws"] i{
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+label[class*="font-aws"] input{
+  padding-left: 40px;
+}
+
+.banner .request {
+	background: orange;
+	border:none;
+	cursor: pointer;
+	width:275px;
+	height:38px;
+	transition: background-color 0.1s linear;
+}
+.banner .request a {
+	
+	text-decoration: none;
+	border:none;
+	color:white;
+	
+}
+.banner .request:hover {
+	background:#ef9e0d;
+}
+
+.laptop {
+	display:flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.banner .slider {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+/*                
+
+
+
+*/
+.service{
+	height:950px;
+	background : #ffffff;
+	
+}
+.service .text {
+	display:flex;
+	justify-content: center;
+	text-align: center;
+	color:#394b50;
+
+}
+
+
+#services {
+	text-transform: uppercase;
+	font-family: Gotham-Black;
+	font-weight: bolder;
+	font-size:30pt;
+
+}
+
+#industry {
+	margin-top:-40px;
+	font-family: OpenSans-Light;
+	font-size:16pt;
+}
+
+.services {
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 0 230px;
+	grid-row-gap:10px;
+	grid-column-gap:150px;
+	margin-right: 150px;
+}
+
+
+.services .box p.name {
+	font-family:Lato-Bold;
+	text-transform: uppercase;
+	font-size:16pt;
+	color:#394b50;
+}
+
+.services .box p.description {
+	font-family: OpenSans-Light;
+	font-size:12pt;
+	color:#7b7b7b;
+}
+
+.services .box .logo {
+	position:relative;
+	right:70px;
+	top:60px;
+}
+
+/*
+
+
+
+
+*/
+
+ 
+.aboutus {
+	height:750px;
+	background:#ffc155;
+	display: grid;
+	grid-template-columns:1fr 1fr;
+	
+}
+
+.aboutus .image {
+	height:750px;
+	width:100%;
+
+}
+
+.aboutus .info {
+	margin-left:50px;
+	margin-top:150px;
+}
+
+.aboutus .info p.introduction {
+	font:30pt Gotham-Black;
+	color:white;
+	text-transform: uppercase;
+}
+
+.aboutus .info p.text {
+	font:12pt OpenSans-Light;
+	color:white;
+	font-weight: bolder;
+	line-height: 1.5;
+}
+
+.aboutus .info a.more {
+	position: relative;
+	border:2px solid #e7ad48;
+	color:white;
+	text-decoration: none;
+	font:15pt Lato-Regular;
+	top:50px;
+	padding:20px 50px;
+	transition: background-color 0.1s linear;
+	cursor:pointer;
+}
+.aboutus .info a.more:hover {
+	background:#ffb638;
+}
+
+/*
+
+
+
+
+*/
+
+.chooseyourpricing {
+	height:1197px;
+	background:#e7edf3;
+
+
+}
+.chooseyourpricing .text {
+	margin-top:150px;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+.chooseyourpricing .text p.name {
+
+	text-transform: uppercase;
+	font:30pt Gotham-Black;
+	margin-bottom:-25px;
+	color:#394b50;
+}
+.chooseyourpricing .text p.info {
+	font:15pt Lato-Light;
+	color:#75888d;
+}
+
+.chooseyourpricing .plan {
+	display:grid;
+	grid-template-columns: 400px 450px 400px;
+	justify-items:space-between;
+	justify-content: center;
+	margin:0 200px;
+	align-items: center;
+	margin-top:40px;
+	
+}
+
+.chooseyourpricing .plan .basic {
+	background:white;
+	text-align: center;
+	padding:50px 25px;
+	height:500px;
+}
+.chooseyourpricing .plan .gold  {
+	background:white;
+	text-align: center;
+	padding:50px 25px;
+	height:500px;
+}
+.chooseyourpricing .plan .premium {
+	background:#709dca;
+	text-align: center;
+	padding:50px 25px;
+	height:600px;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.chooseyourpricing .plan .info {
+	display:flex;
+	flex-direction: column;
+
+}
+
+.chooseyourpricing .plan p.name {
+	font:20pt Lato-Light;
+	text-transform: uppercase;
+}
+
+
+
+.chooseyourpricing .plan .premium p.name {
+	color:white;
+	margin-top:-32px;
+}
+.chooseyourpricing .plan .basic p.name {
+	color:#818b95;
+}
+
+.chooseyourpricing .plan .gold p.name {
+	color:#818b95
+}
+
+.chooseyourpricing .plan .premiumprice{
+	margin-top:-15px;
+	font:40pt Lato-Bold;
+	color:white;
+}
+
+.chooseyourpricing .plan .premium .per 	{
+	margin-top:-60px;
+	font:20pt Lato-Light;
+	color:white;
+}
+
+.chooseyourpricing .plan .premium .info {
+	color:#b7d8f8;
+	font:12pt Lato-Regular;
+	text-transform: uppercase;
+	
+}
+
+.chooseyourpricing .plan .premium .info p.edge {
+	border-top:1px solid;
+	padding-top:10px;
+	border-color:#8eb8e2;
+	width:350px;
+}
+
+.chooseyourpricing .plan .basicprice {
+	margin-top:-15px;
+	font:40pt Lato-Bold;
+	color:#ffbb42;
+}
+
+.chooseyourpricing .plan .goldprice {
+	margin-top:-15px;
+	font:40pt Lato-Bold;
+	color:#ffbb42;
+}
+
+.chooseyourpricing .plan .basic .per 	{
+	margin-top:-60px;
+	font:20pt Lato-Light;
+	color:#818b95;
+}
+
+.chooseyourpricing .plan .gold .per 	{
+	margin-top:-60px;
+	font:20pt Lato-Light;
+	color:#818b95;
+}
+
+.chooseyourpricing .plan .basic .info {
+	color:#b5bbc1;
+	font:12pt Lato-Regular;
+	text-transform: uppercase;
+	
+}
+.chooseyourpricing .plan .gold .info {
+	color:#b5bbc1;
+	font:12pt Lato-Regular;
+	text-transform: uppercase;
+	
+}
+.chooseyourpricing .plan .basic .info p.edge {
+	border-top:1px solid;
+	padding-top:10px;
+	border-color:#e2e9f0;
+	width:350px;
+}
+
+.chooseyourpricing .plan .gold .info p.edge {
+	border-top:1px solid ;
+	padding-top:10px;
+	border-color:#e2e9f0;
+	width:350px;
+}
+
+.chooseyourpricing .plan .basic a.request {
+	background: #ffbb42;
+	padding:20px 25px;
+	position:relative;
+	top:70px;
+	text-decoration: none;
+	color:white;
+	text-transform: uppercase;
+	font:12pt Lato-Regular;
+	transition: background-color 0.1s linear;
+}
+
+.chooseyourpricing .plan .premium a.request {
+	background: #ffbb42;
+	padding:20px 25px;
+	position:relative;
+	top:50px;
+	text-decoration: none;
+	color:white;
+	text-transform: uppercase;
+	font:12pt Lato-Regular;
+	transition: background-color 0.1s linear;
+}
+
+.chooseyourpricing .plan .gold a.request {
+	background: #ffbb42;
+	padding:20px 25px;
+	position:relative;
+	top:70px;
+	text-decoration: none;
+	color:white;
+	text-transform: uppercase;
+	font:12pt Lato-Regular;
+	transition: background-color 0.1s linear;
+
+}
+
+.chooseyourpricing .plan .basic a.request:hover {
+	background:#ef9e0d;
+}
+.chooseyourpricing .plan .premium a.request:hover {
+	background:#ef9e0d;
+
+}
+
+.chooseyourpricing .plan .gold a.request:hover {
+	background:#ef9e0d;
+}
+/*
+
+
+
+
+*/
+ 
+.howitworks {
+	height:1142px;
+	background:#ffffff;
+
+}
+
+.howitworks .text{
+	display:flex;
+	flex-direction: column;
+	text-align: center;
+	padding-top:80px;
+}
+
+.howitworks .text p.name {
+	font:30pt Gotham-Black;
+	color: #394b50;
+	text-transform: uppercase;
+}
+.howitworks .text p.info {
+	font:16pt Lato-Light;
+	margin-top:-30px;
+}
+
+.howitworks .arrows {
+	display:flex;
+	justify-content: space-between;
+	margin:0px 325px;
+	position:relative;
+	top:125px;
+
+}
+
+.howitworks .arrows .arrowup {
+
+	position:relative;
+	top:150px;
+}
+
+.howitworks .steps {
+	display:flex;
+	margin:0px 50px;
+	justify-content: center;
+
+}
+
+.howitworks .steps .box {
+	padding:25px;
+}
+
+.howitworks .steps p.name {
+	text-align:center;
+	font:20pt Lato-Bold;
+	color:#394b50;
+	text-transform: uppercase;
+
+}
+
+.howitworks .steps p.info {
+	text-align:center;
+	color:#7b7b7b;
+	font:13pt OpenSans-Light;
+}
+
+.howitworks .steps .box .icon {
+	font-size:72pt;
+	display:flex;
+	justify-content:center;
+	padding-top:110px;
+	padding-bottom:90px;
+	
+}
+
+
+.howitworks .button {
+	display:flex;
+	justify-content: center;
+}
+
+
+.howitworks .button a.request {
+	position: relative;
+	top:80px;
+	text-align: center;
+	font:14pt Lato-Regular;
+	text-transform: uppercase;
+	text-decoration: none;
+	color:white;
+	background: #ffbb42;
+	transition: background-color 0.1s linear;
+	padding:20px 20px;
+
+
+}
+
+.howitworks a.request:hover {
+	background:#ef9e0d;
+
+}
+
+/*
+
+
+
+
+*/
+
+
+.happyclients {
+	height:1209px;
+	background:#ffc155;
+}
+
+.happyclients .text {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	padding-top:140px;
+}
+
+.happyclients .text p.name {
+	font:30pt Gotham-Black;
+	color:white;
+	text-transform: uppercase;
+}
+
+.happyclients .text p.info {
+	margin-top:-40px;
+	font:16pt OpenSans-Light;
+	color:white;
+}
+
+.happyclients .clients {
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	margin:0px 80px;
+	grid-row-gap:20px;
+	grid-column-gap:30px;
+	margin-top:70px;
+	
+}
+
+.happyclients .clients .box {
+	
+	display:flex;
+	background: white;
+	padding-top:25px;
+	padding-bottom:50px;
+	padding-right:50px;
+	padding-left:50px;
+	
+
+}
+
+.happyclients .clients .box .photo {
+
+	height: calc(100% / 1.5);
+	padding-top:25px;
+	
+}
+.happyclients .clients .box .text {
+	
+	padding-top:15px;
+	padding-left:20px;
+	align-items: flex-start;
+}
+
+
+
+.happyclients .clients .box .text p.review {
+	font:12pt OpenSans-Light;
+	text-align:left;
+}
+
+.happyclients .clients .box .text .name {
+	font:14pt Lato-Regular;
+	color: #f6772c;
+	text-transform: uppercase;
+
+}
+.happyclients .clients .box .text .job {
+	font:14pt Lato-Regular;
+	color:#a7b4b9;
+	text-transform: uppercase;
+}
+
+/*
+
+
+
+*/
+
+
+.newsletter {
+	height:451px;
+	background:#ffffff;
+}
+
+
+.newsletter .text {
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+	margin-top:150px;
+}
+
+.newsletter .text p.name {
+	font:30pt Gotham-Black;
+	text-transform: uppercase;
+	color:#394b50;
+}
+
+.newsletter .text p.info {
+	font:16pt OpenSans-Light;
+	color:#394b50;
+	margin-top:-40px;
+}
+
+.newsletter form {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+
+
+}
+
+.newsletter form input {
+	padding-right:210px;
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-left:40px;
+	margin: 0px 10px;
+}
+
+.newsletter form input.email {
+	padding-right:250px;
+	padding-left:40px;
+}
+
+.newsletter form .fill i {
+	position:relative;
+	right:387px;
+}
+
+.newsletter .request a {
+	font:13pt Lato-Regular;
+	text-decoration: none;
+	text-transform: uppercase;
+	color:white;
+	background: #ffbb42;
+	text-align: center;
+	padding-right:80px;
+	padding-top:14px;
+	padding-bottom:14px;
+	padding-left:80px;
+	transition: background-color 0.1s linear;
+}
+
+.newsletter .request a:hover {
+	background:#ef9e0d;
+}
+
+
+/*
+
+
+
+*/
+
+
+.map {
+	height:820px;
+	background:#ffffff;
+}
+
+.map .map {
+	display:block;
+	position:relative;
+	padding:60px 60px;
+	height: calc(100% / 1.2);
+	margin:0 auto;
+
+}
+
+.map .ball {
+	display:block;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:-650px;
+
+}
+.map .address {
+	position: relative;
+	z-index:1;
+	text-align:center;
+	display:flex;
+	flex-direction: column;
+}
+.map .address p {
+	position: relative;
+	bottom:250px;
+	line-height: 1%;
+	margin:4px 0px;
+}
+
+.map .address a {
+	position: relative;
+	bottom:250px;
+	line-height: 1%;
+	margin:4px 0px;
+
+}
+
+.map .address p.info {
+	color:#9ea9ac;
+	font:11pt OpenSans-Light;
+}
+.map .address a {
+	color:#ffbb42;
+	font:11pt OpenSans-Light;
+	text-decoration: none;
+
+}
+
+.map .address p.name {
+	font:16pt Lato-Bold;
+	color:white;
+	text-transform: uppercase;
+}
+
+.map .logo {
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	bottom:350px;
+}
+
+
+/*
+
+
+
+*/
+
+footer {
+	border-top:1px solid silver;
+	height:290px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+}
+footer nav {
+
+	
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items: flex-start;
+	
+}
+
+
+footer .navbtn li {
+	display:inline;
+	align-self:center;
+	margin: 0 2px;
+	text-transform: uppercase;
+	
+
+}
+
+footer .navbtn li a {
+	text-decoration: none;
+	color:#868686;
+	font-family: Lato-Regular;
+	font-size:15px;
+	padding:10px;
+	transition: background-color 0.1s linear;
+	cursor:pointer;	
+}
+
+footer .navbtn li a:hover {
+	
+	color:white;
+	background: #709dca;
+	
+}
+
+footer .phone {
+	display:flex;
+	align-items: baseline;
+}
+footer .phone p.number {
+	font:22pt Lato-Regular;
+	color:#394b50;
+	margin-left:15px;
+}
+
+footer .links {
+	display:flex;
+	align-items:baseline;
+
+}
+
+footer .links i {
+	margin:0px 10px;
+	transition: color 0.1s linear;
+}
+
+footer .links i:hover{
+	color:#709dca;
+}
+
+
+/*
+
+
+
+*/
+
+.end {
+	height:61px;
+	background:#709dca;
+	display:flex;
+	justify-content: center;
+}
+
+
+.end p.copyright  {
+	font:13pt OpenSans-Light;
+	color:white;
+}
